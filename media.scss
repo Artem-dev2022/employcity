@@ -1,0 +1,258 @@
+@media (max-width: 1169px) {
+    .burger {
+        display: block;
+    }
+    .close {
+        display: block;
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+    .container {
+        width: 768px;
+    }
+    .header {
+        padding: 15px 0;
+        height: 50px;
+        &__logo {
+            font-size: 20px;
+        }
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 275px;
+            background-color: #3d4050;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .hero {
+        min-height: 450px;
+        &__container {
+            padding: 100px 0;
+        }
+        &__title {
+            margin-bottom: 40px;
+            width: 600px;
+            font-size: 28px;
+        }
+        &__list-title {
+            margin-bottom: 8px;
+            font-size: 20px;
+            width: 600px;
+        }
+        &__list {
+            margin-bottom: 40px;
+        }
+        &__item {
+            width: 600px;
+        }
+    }
+    .order {
+        min-height: 670px;
+        &__container {
+            padding: 50px 0;
+        }
+        &__title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        &__item {
+            min-width: 200px;
+        }
+        &__circle {
+            margin:  auto;
+        }
+        &__step {
+            left: auto;
+        }
+        &__dots {
+            display: none;
+        }
+    }
+    .dropdown {
+        position: relative;
+        width: 230px;
+        &__placeholder {
+            width: 170px;
+            font-size: 16px;
+        }
+        &__placeholder::placeholder {
+            font-size: 16px;
+        }
+    }
+    .form {
+        &__input {
+            width: 230px;
+            height: 48px;
+            font-size: 16px;
+        }
+        &__input::placeholder {
+            font-size: 16px;
+        }
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 54px;
+        }
+        &__download {
+            width: 270px;
+        }
+    }
+    .volume {
+        &__slider {
+            display: block;
+            position: relative;
+            width: 430px;
+        }
+    }
+    .footer {
+        &__container {
+            flex-wrap: wrap-reverse;
+        }
+        &__copy {
+            width: 100%;
+            font-size: 13px;
+        }
+        &__list {
+            padding: 0 20px 0 0;
+            gap: 30px;
+            border-left: none;
+        }
+    }
+    .visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 300px;
+    }
+    .header {
+        &__nav {
+            width: 100vw;
+        }
+    }
+    .hero {
+        background-position: 60% 0;
+        &__container {
+            padding: 80px 0 20px 0;
+        }
+        &__title {
+            width: 300px;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        &__list-title {
+            font-size: 18px;
+            width: 300px;
+        }
+        &__item {
+            font-size: 16px;
+            width: 280px;
+        }
+        &__bottom {
+            margin: 0 auto;
+            gap: 0;
+            justify-content: space-between;
+            width: 300px;
+        }
+        &__btn {
+            width: 130px;
+        }
+    }
+    .order {
+        min-height: 670px;
+        &__container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        &__list {
+            padding: 0;
+            margin-bottom: 100px;
+        }
+        &__circle {
+            margin:  auto;
+        }
+        &__step {
+            left: auto;
+        }
+        &__dots {
+            display: none;
+        }
+    }
+    .dropdown {
+        width: 300px;
+        height: 45px;
+    }
+    .form {
+        &__top {
+            justify-content: center;
+        }
+        &__input {
+            width: 300px;
+        }
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+    .volume {
+        &__title {
+            font-size: 14px;
+        }
+        &__slider {
+            width: 300px;
+        }
+    }
+    .footer {
+        height: 150px;
+        &__container {
+            flex-wrap: wrap-reverse;
+        }
+        &__links {
+            justify-content: space-between;
+            gap: unset;
+            width: 100%;
+        }
+        &__copy {
+            width: 180px;
+            color: #FFF;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        &__list {
+            justify-content: space-between;
+            padding: 0 0px 0 0;
+            gap: 0px;
+            border: none;
+        }
+    }
+}
